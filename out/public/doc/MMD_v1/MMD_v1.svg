@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="360px" preserveAspectRatio="none" style="width:1110px;height:360px;background:#FFFFFF;" version="1.1" viewBox="0 0 1110 360" width="1110px" zoomAndPan="magnify"><defs/><g><rect fill="#FFF800" height="55.2188" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:1.5;" width="138" x="509" y="151.6563"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="118" x="519" y="176.1895">promotions-engine</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="539" y="193.7988">Microservice</text><rect fill="#F99C8C" height="37.6094" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:1.5;" width="175" x="697" y="82.6328"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="707" y="107.166">php bin/console doctrine</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="925" y="87.5566">:database:create</text><path d="M872,101.4375 L882,101.4375 C897,101.4375 897,81.8281 912,81.8281 L922,81.8281 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147" x="925" y="107.166">:schema:update --force</text><path d="M872,101.4375 L882,101.4375 C897,101.4375 897,101.4375 912,101.4375 L922,101.4375 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="173" x="925" y="126.7754">:schema:update --dump-sql</text><path d="M872,101.4375 L882,101.4375 C897,101.4375 897,121.0469 912,121.0469 L922,121.0469 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><path d="M647,179.2656 L657,179.2656 C672,179.2656 672,101.4375 687,101.4375 L697,101.4375 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><rect fill="#F99C8C" height="37.6094" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:1.5;" width="158" x="697" y="161.0703"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="707" y="185.6035">php bin/console make</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="908" y="146.3848">:entity [&lt;Name&gt;Entity]</text><path d="M855,179.875 L865,179.875 C880,179.875 880,140.6563 895,140.6563 L905,140.6563 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="908" y="165.9941">:entity --regenerate</text><path d="M855,179.875 L865,179.875 C880,179.875 880,160.2656 895,160.2656 L905,160.2656 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="908" y="185.6035">:migration</text><path d="M855,179.875 L865,179.875 C880,179.875 880,179.875 895,179.875 L905,179.875 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="908" y="205.2129">:controller [&lt;Name&gt;Controller]</text><path d="M855,179.875 L865,179.875 C880,179.875 880,199.4844 895,199.4844 L905,199.4844 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="908" y="224.8223">:form</text><path d="M855,179.875 L865,179.875 C880,179.875 880,219.0938 895,219.0938 L905,219.0938 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><path d="M647,179.2656 L657,179.2656 C672,179.2656 672,179.875 687,179.875 L697,179.875 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><rect fill="#F99C8C" height="37.6094" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:1.5;" width="168" x="697" y="238.8984"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="144" x="707" y="263.4316">php bin/console debug</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="42" x="918" y="263.4316">:router</text><path d="M865,257.7031 L875,257.7031 C890,257.7031 890,257.7031 905,257.7031 L915,257.7031 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><path d="M647,179.2656 L657,179.2656 C672,179.2656 672,257.7031 687,257.7031 L697,257.7031 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="219" x="233" y="25.5332">1. symfony new promotions-engine</text><path d="M509,179.2656 L499,179.2656 C484,179.2656 484,19.8047 469,19.8047 L459,19.8047 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="303" y="45.1426">2. cd promotions-engine</text><path d="M509,179.2656 L499,179.2656 C484,179.2656 484,39.4141 469,39.4141 L459,39.4141 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><rect fill="#F585FA" height="37.6094" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:1.5;" width="238" x="221" y="59.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="218" x="231" y="83.752">composer req --dev phpunit maker</text><path d="M509,179.2656 L499,179.2656 C484,179.2656 484,78.0234 469,78.0234 L459,78.0234 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><rect fill="#FFA500" height="108.0469" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:1.5;" width="175" x="284" y="116.8281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="294" y="141.3613">symfony serve -d</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="294" y="158.9707">symfony server:ca:install</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="294" y="176.5801">symfony server:start -d</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127" x="294" y="194.1895">symfony server:stop</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="294" y="211.7988">symfony server:status</text><rect fill="#FFA500" height="55.2188" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:1.5;" width="203" x="31" y="143.2422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="41" y="167.7754">symfony proxy:start</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="41" y="185.3848">symfony proxy:domain.attach</text><path d="M284,170.8516 L274,170.8516 C259,170.8516 259,170.8516 244,170.8516 L234,170.8516 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><path d="M509,179.2656 L499,179.2656 C484,179.2656 484,170.8516 469,170.8516 L459,170.8516 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><rect fill="#00D4FF" height="37.6094" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:1.5;" width="47" x="412" y="272.8984"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27" x="422" y="297.4316">.env</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="266" y="250.4082">APP_ENV=dev</text><path d="M412,291.7031 L402,291.7031 C387,291.7031 387,244.6797 372,244.6797 L362,244.6797 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="99" x="260" y="270.0176">APP_SECRET=</text><path d="M412,291.7031 L402,291.7031 C387,291.7031 387,264.2891 372,264.2891 L362,264.2891 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="305" x="11" y="289.627">DATABASE_URL="postgresql://user:password@</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="348" x="11" y="307.2363">127.0.0.1:5433/menu?serverVersion=14&amp;charset=utf8"</text><path d="M412,291.7031 L402,291.7031 C387,291.7031 387,292.7031 372,292.7031 L362,292.7031 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="242" x="10" y="326.8457">MAILER_DSN=smtp://user:password@</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="349" x="10" y="344.4551">smtp.mailtrap.io:2525?encryption=tls&amp;auth_mode=login</text><path d="M412,291.7031 L402,291.7031 C387,291.7031 387,329.9219 372,329.9219 L362,329.9219 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><path d="M509,179.2656 L499,179.2656 C484,179.2656 484,291.7031 469,291.7031 L459,291.7031 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><!--MD5=[0a3e7550b4809bc4e347ff800ad75aa9]
+@startmindmap
+<style>
+mindmapDiagram {
+  .grass {
+    BackgroundColor #09d740
+  }
+  .blau {
+    BackgroundColor #00d4ff
+  }
+  .orange {
+    BackgroundColor orange
+  }
+  .green {
+    BackgroundColor lightgreen
+  }
+  .rose {
+    BackgroundColor #f585fa
+  }
+  .gelb {
+    BackgroundColor #fff800
+  }
+  .bege {
+    BackgroundColor #f99c8c
+  }
+
+}
+</style>
++ promotions-engine\n     Microservice<<gelb>>
+- -_ 1. symfony new promotions-engine 
+- -_ 2. cd promotions-engine
+- - composer req - -dev phpunit maker<<rose>>
+- - symfony serve -d\nsymfony server:ca:install\nsymfony server:start -d\nsymfony server:stop\nsymfony server:status<<orange>>
+- - - symfony proxy:start\nsymfony proxy:domain.attach<<orange>>
+- - .env<<blau>>
+- - -_ APP_ENV=dev
+- - -_ APP_SECRET=
+- - -_ DATABASE_URL="postgresql://user:password@\n127.0.0.1:5433/menu?serverVersion=14&charset=utf8"
+- - -_ MAILER_DSN=smtp://user:password@\nsmtp.mailtrap.io:2525?encryption=tls&auth_mode=login
+
+++ php bin/console doctrine<<bege>>
++++_ :database:create
++++_ :schema:update - -force
++++_ :schema:update - -dump-sql
+
+++ php bin/console make<<bege>>
++++_ :entity [<Name>Entity]
++++_ :entity - -regenerate
++++_ :migration
++++_ :controller [<Name>Controller]
++++_ :form
+
+++ php bin/console debug <<bege>>
++++_ :router
+
+@endmindmap
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: Cp1252
+Language: de
+Country: DE
+--></g></svg>
