@@ -1,5 +1,7 @@
 .env
 .env.test
+/tests/
+/nbproject/
 ###> symfony/framework-bundle ###
 /.env.local
 /.env.local.php
