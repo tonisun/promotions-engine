@@ -1,166 +1,272 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-	<title>MyImbis</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="MyImbis Online Shop">
-	<meta name="keywords" content="essen, bestellen, online bestellen">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<!-- Favicon -->
-	<link type="image/x-icon" href="{{ asset('img/icons/favicon.ico') }}"  rel="shortcut icon"/>
+    <head>
+        <title>
+            My Menu
+                    
+        </title>
+        <meta charset="UTF-8">
+        <meta name="description" content="MyImbis Online Shop">
+        <meta name="keywords" content="essen, bestellen, online bestellen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
- 
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
-	<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}"/>
-	<link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}"/>
-	<link rel="stylesheet" href="{{ asset('css/slicknav.min.css') }}"/>
+        <!-- Favicon -->
+        <link type="image/x-icon" href="{{ asset('img/icons/favicon.ico') }}" rel="shortcut icon" />
 
-	<!-- Main Stylesheets -->
-	<link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
+        <!-- Google font -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/slicknav.min.css') }}" />
 
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+        <!-- Main Stylesheets -->
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
 
-</head>
-<body>
-	<!-- Page Preloder -->
-	<div id="preloder">
-		<div class="loader"></div>
-	</div>
+    <!--[if lt IE 9]>
+        		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        	<![endif]-->
 
-	<!-- Header section -->
-	<header class="header-section clearfix">
-		<a href="{{ path('home.index') }}" class="site-logo">
-			<img src="{{ asset('assets/images/Logo-my-menu.png') }}" alt="">
-		</a>
-		<div class="header-right">
-			<div class="user-panel">
-				{% if not is_granted('IS_AUTHENTICATED_FULLY') %}
-				<a href="#" class="register">Login</a>
-				{% endif %}
-				{% if is_granted('IS_AUTHENTICATED_FULLY') %}
-				<a href="#" class="register">Logout</a>
-				{% endif %}
-			</div> 
-		</div>
-		<ul class="main-menu">
-			<li><a href="{{ path('home.index') }}">Willkommen</a></li>
-			<li><a href="{{ path('product.index') }}">Produkte</a></li>
-			<li><a href="#">Bestellungen</a></li>
-			<li><a href="#">Kellner</a></li>
-			<li><a href="#">Gästebuch</a></li>
-			{% if is_granted('IS_AUTHENTICATED_FULLY') %}
-			<li><a href="#">Mitarbeiter</a>
-				<ul class="sub-menu">
-					<li><a href="#">Alle Gerichte</a></li>
-					<li><a href="#">Gericht anlegen</a></li>
-					<li><a href="#">Bestellungen</a></li>
-					<li><a href="#" class="register">Registrieren</a></li>
-					<li><a href="#">LogOut</a></li>
-				</ul>
-			</li>
-			{% endif %}
+    </head>
+    <body>
+        <!-- Page Preloder -->
+        <div id="preloder">
+            <div class="loader"></div>
+        </div>
 
-		</ul>
-	</header>
-	<!-- Header section end -->
+        <!-- Header section -->
+        <header class="header-section clearfix">
+            <a href="{{ path('home.index') }}" class="site-logo">
+                <img src="{{ asset('assets/images/Logo-my-menu.png') }}" alt="">
+            </a>
+            <div class="header-right">
+                <div class="user-panel">
+                    {% if not is_granted('IS_AUTHENTICATED_FULLY') %}
+                        <a href="#" class="register">
+                            Login
+                                                    
+                        </a>
+                    {% endif %}
+                    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                        <a href="#" class="register">
+                            Logout
+                                                    
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+            <ul class="main-menu">
+                <li>
+                    <a href="{{ path('home.index') }}">
+                        Willkommen
+                                            
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ path('product.index') }}">
+                        Produkte
+                                            
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Bestellungen
+                                            
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ path('supplier.index') }}">
+                        Supplier
+                                            
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Gästebuch
+                                            
+                    </a>
+                </li>
+                {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                    <li>
+                        <a href="#">
+                            Mitarbeiter
+                                                    
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">
+                                    Alle Gerichte
+                                                                    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Gericht anlegen
+                                                                    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Bestellungen
+                                                                    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="register">
+                                    Registrieren
+                                                                    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    LogOut
+                                                                    
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                {% endif %}
 
+            </ul>
+        </header>
+        <!-- Header section end -->
 
-    {% block body %}
-    {% endblock %}    
+        {% block body %}{% endblock %}
 
+        <!-- Intro section -->
+        <section class="intro-section spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="section-title">
+                            <h2>
+                                All you can eat für 49,99 €
+                                                            
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>
+                            Das Resaurant bietet für 49,99 € pro Person folgendes Konzept an: Zunächst könnt ihr aus vielem verschiedenen Gerichte auswählen ,solange Ihr möchtet. Als Abschluss wartet dann das Dessertbuffet mit frischen und hausgemachten Leckereien auf Euch.
+                                                    
+                        </p>
+                        <a href="#" class="site-btn">
+                            Try it now
+                                                    
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Intro section end -->
 
-	<!-- Intro section -->
-	<section class="intro-section spad">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="section-title">
-						<h2>All you can eat für 49,99 €</h2>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<p>Das Resaurant bietet für 49,99 € pro Person folgendes Konzept an: Zunächst könnt ihr aus vielem verschiedenen Gerichte auswählen ,solange Ihr möchtet. Als Abschluss wartet dann das Dessertbuffet mit frischen und hausgemachten Leckereien auf Euch.</p>
-					<a href="#" class="site-btn">Try it now</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Intro section end -->
+        <!-- Footer section -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7 order-lg-2">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="footer-widget">
+                                    <h2>
+                                        Über uns
+                                                                            
+                                    </h2>
+                                    <ul>
+                                        <li><a href="">Willkommen</a></li>
+                                        <li><a href="">Menükarte</a></li>
+                                        <li><a href="">Bestellungen</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="footer-widget">
+                                    <h2>
+                                        Menükarte
+                                                                            
+                                    </h2>
+                                    <ul>
+                                        <li><a href="">Getränke</a></li>
+                                        <li><a href="">Vorspeisen</a></li>
+                                        <li><a href="">Hauptspeisen</a></li>
+                                        <li><a href="">Nachspeisen</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="footer-widget">
+                                    <h2>
+                                        Kontakt
+                                                                            
+                                    </h2>
+                                    <ul>
+                                        <li><a href="">Kellner</a></li>
+                                        <li><a href="">Impressum</a></li>
+                                        <li><a href="">Login</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-5 order-lg-1">
+                        <img src="{{ asset('assets/images/Logo-my-menu.png') }}" alt="">
+                        <div class="copyright">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                                                        
+                            <script>document.write(new Date().getFullYear());</script>
+                            All rights reserved | This template is made with 
+                                                        
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            by 
+                                                        
+                            <a href="https://colorlib.com" target="_blank">
+                                Colorlib
+                                                            
+                            </a>
+                            Downloaded from 
+                                                        
+                            <a href="https://themeslab.org/" target="_blank">
+                                Themeslab
+                                                            
+                            </a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </div>
+                        <div class="social-links">
+                            <a href="">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-pinterest"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer section end -->
 
-	<!-- Footer section -->
-	<footer class="footer-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-6 col-lg-7 order-lg-2">
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="footer-widget">
-								<h2>Über uns</h2>
-								<ul>
-									<li><a href="">Willkommen</a></li>
-									<li><a href="">Menükarte</a></li>
-									<li><a href="">Bestellungen</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="footer-widget">
-								<h2>Menükarte</h2>
-								<ul>
-									<li><a href="">Getränke</a></li>
-									<li><a href="">Vorspeisen</a></li>
-									<li><a href="">Hauptspeisen</a></li>
-									<li><a href="">Nachspeisen</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="footer-widget">
-								<h2>Kontakt</h2>
-								<ul>
-									<li><a href="">Kellner</a></li>
-									<li><a href="">Impressum</a></li>
-									<li><a href="">Login</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-6 col-lg-5 order-lg-1">
-					<img src="{{ asset('assets/images/Logo-my-menu.png') }}" alt="">
-					<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> Downloaded from <a href="https://themeslab.org/" target="_blank">Themeslab</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
-					<div class="social-links">
-						<a href=""><i class="fa fa-instagram"></i></a>
-						<a href=""><i class="fa fa-pinterest"></i></a>
-						<a href=""><i class="fa fa-facebook"></i></a>
-						<a href=""><i class="fa fa-twitter"></i></a>
-						<a href=""><i class="fa fa-youtube"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- Footer section end -->
-	
-	<!--====== Javascripts & Jquery ======-->
-	
-	<script src="{{ asset('js/popper.min.js') }}"></script>
-	<script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
-	<script src="{{ asset('js/bootstrap.min.js') }}"></script>
-	<script src="{{ asset('js/jquery.slicknav.min.js') }}"></script>
-	<script src="{{ asset('js/owl.carousel.min.js') }}"></script>
-	<script src="{{ asset('js/mixitup.min.js') }}"></script>
-	<script src="{{ asset('js/main.js') }}"></script>
+        <!--====== Javascripts & Jquery ======-->
 
-	</body>
+        <script src="{{ asset('js/popper.min.js') }}"></script>
+        <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('js/jquery.slicknav.min.js') }}"></script>
+        <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+        <script src="{{ asset('js/mixitup.min.js') }}"></script>
+        <script src="{{ asset('js/main.js') }}"></script>
+
+    </body>
 </html>
