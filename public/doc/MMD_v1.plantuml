@@ -1,0 +1,55 @@
+@startmindmap
+<style>
+mindmapDiagram {
+  .grass {
+    BackgroundColor #09d740
+  }
+  .blau {
+    BackgroundColor #00d4ff
+  }
+  .orange {
+    BackgroundColor orange
+  }
+  .green {
+    BackgroundColor lightgreen
+  }
+  .rose {
+    BackgroundColor #f585fa
+  }
+  .gelb {
+    BackgroundColor #fff800
+  }
+  .bege {
+    BackgroundColor #f99c8c
+  }
+
+}
+</style>
++ promotions-engine\n     Microservice<<gelb>>
+--_ 1. symfony new promotions-engine 
+--_ 2. cd promotions-engine
+-- composer req --dev phpunit maker<<rose>>
+-- symfony serve -d\nsymfony server:ca:install\nsymfony server:start -d\nsymfony server:stop\nsymfony server:status<<orange>>
+--- symfony proxy:start\nsymfony proxy:domain.attach<<orange>>
+-- .env<<blau>>
+---_ APP_ENV=dev
+---_ APP_SECRET=
+---_ DATABASE_URL="postgresql://user:password@\n127.0.0.1:5433/menu?serverVersion=14&charset=utf8"
+---_ MAILER_DSN=smtp://user:password@\nsmtp.mailtrap.io:2525?encryption=tls&auth_mode=login
+
+++ php bin/console doctrine<<bege>>
++++_ :database:create
++++_ :schema:update --force
++++_ :schema:update --dump-sql
+
+++ php bin/console make<<bege>>
++++_ :entity [<Name>Entity]
++++_ :entity --regenerate
++++_ :migration
++++_ :controller [<Name>Controller]
++++_ :form
+
+++ php bin/console debug <<bege>>
++++_ :router
+
+@endmindmap

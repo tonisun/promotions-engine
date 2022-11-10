@@ -81,3 +81,14 @@
 /web/js/
 
 # End of https://www.toptal.com/developers/gitignore/api/symfony
+
+### NetBeans ###
+/nbproject/private/
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
